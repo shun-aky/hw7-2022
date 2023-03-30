@@ -57,5 +57,13 @@ window.onload=function(){
 		var slider = document.querySelector("#slider");
 		video.volume = slider.value / 100;
 		document.querySelector("#volume").innerHTML = slider.value + "%";
-	});	
+	});
+
+	document.querySelector("#vintage").addEventListener("click", function() {
+		document.querySelector(".video").classList.add("oldSchool");
+	});
+
+	document.querySelector("#orig").addEventListener("click", function() {
+		document.querySelector(".video").classList.remove("oldSchool");
+	});
 };
